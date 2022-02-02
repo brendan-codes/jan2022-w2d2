@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- main -->
+    <div class="main">
+        <!-- header -->
+        <div class="header flex justify-between align-center">
+            <h1>Just<span>Dessert</span></h1>
+            <div class="flex justify-between align-center">
+                <button onclick="joinBtn(this)">Join</button>
+                <button>Login</button>
+            </div>
+        </div>
+
+        <!-- search -->
+        <div class="search flex justify-around align-center">
+            <div>
+                <input id="search" type="text" onkeypress="changeInput()">
+                <input type="submit" onclick="search()">
+            </div>
+            <div class="category">
+                <img src="http://placekitten.com/500/500" alt="">
+                <p>Content</p>
+            </div>
+            <div class="category">
+                <img src="http://placekitten.com/500/500" alt="">
+                <p>Content</p>
+            </div>
+            <div class="category">
+                <img src="http://placekitten.com/500/500" alt="">
+                <p>Content</p>
+            </div>
+            <div class="category">
+                <img src="http://placekitten.com/500/500" alt="">
+                <p>Content</p>
+            </div>
+        </div>
+
+        <!-- columns -->
+        <div class="columns flex">
+            <div class="col-3">
+                <div class="recipe">
+                    <h1>Recipe of the Day</h1>
+                    <!-- 960 × 640 -->
+                    <img src="http://placekitten.com/600/400" alt="">
+                    <div class="flex justify-between align-center">
+                        <p>Orange Jelly Tart Thing</p>
+                        <div class="flex justify-between align-center">
+                            <img onclick="like('#counter1')" class="likeIcon" src="http://placekitten.com/50/50" alt="">
+                            <p id="counter1">55</p>
+                        </div>
+                    </div>
+                    <p>By: <a>Brendan</a></p>
+                    <h3><a>See Full Recipe</a></h3>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="recommended">
+                    <h1>Recommended for you:</h1>
+                    <!-- 960 × 640 -->
+                    <img src="http://placekitten.com/600/400" alt="">
+                    <div class="flex justify-between align-center">
+                        <p>Orange Jelly Tart Thing</p>
+                        <div class="flex
+                                    justify-between
+                                    align-center">
+                            <img
+                                onclick="like('#counter2')"
+                                class="likeIcon"
+                                src="http://placekitten.com/50/50"
+                                alt=""
+                            >
+                            <p id="counter2">55</p>
+                        </div>
+                    </div>
+                    <p class="byLine">By: <a>Brendan</a></p>
+                    <img src="http://placekitten.com/600/400" alt="">
+                    <div class="flex justify-between align-center">
+                        <p>Orange Jelly Tart Thing</p>
+                        <div class="flex justify-between align-center">
+                            <img onclick="like('#counter3')" class="likeIcon" src="http://placekitten.com/50/50" alt="">
+                            <p id="counter3">55</p>
+                        </div>
+                    </div>
+                    <p class="byLine">By: <a>Brendan</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>

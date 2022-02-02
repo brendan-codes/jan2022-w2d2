@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.header {
+    color:white;
+    height: 100px;
+    background-color: #333333;
+}
+
+.header h1 span {
+    color: #FF9901;
+}
+
+.header h1 {
+    margin-left: 20px;
+}
+
+.header div {
+    /* width: 150px; */
+    margin-right: 20px;
+}
+
+.header div button {
+    padding: 8px 14px;
+    border: 0;
+}
+
+.header div button:first-child:active,
+.header div button:last-child:active {
+    background-color: red;
+}
+
+.header div button:first-child {
+    /* color: white; */
+    background-color:#FF9901;
+}
+
+.header div button:last-child {
+    margin-left: 20px;
+    color: white;
+    background-color: #085394;
+}
+
+.search {
+    height: 200px;
+    background-color: #F9CB9C;
+}
+
+.search div input:last-child {
+    color: white;
+    background-color: #085394;
+    padding: 8px 14px;
+    border: 0px;
+
+    border-radius: 0% 10px 10px 0%;
+}
+
+.search div input:first-child {
+    padding: 7px 13px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.category img {
+    border-radius: 50%;
+    width: auto;
+    height: 150px;
+}
+
+.category p {
+    text-align: center;
+}
+
+.col-3 {
+    flex: 3;
+/*
+    background-color: aquamarine;
+    height: 500px; */
+}
+
+.recipe {
+    padding: 20px;
+    margin: 20px;
+    background-color: #EEEEEE;
+}
+
+.recipe h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe {
+    font-size: larger;
+}
+
+.recipe h1 {
+    color: blue;
+}
+
+.recipe p {
+    font-size: larger;
+    margin: 5px;
+}
+
+.likeIcon {
+    border-radius: 50%;
+}
+
+.recipe p a, .recipe h3 a, .recommended a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.recipe h3 {
+    text-align: center;
+}
+
+.col-2 {
+    flex: 2;
+    /* background-color: orchid;
+    height: 500px; */
+}
+
+.recommended {
+    margin: 20px;
+    font-size: larger;
+}
+
+.recommended h1 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.recommended img {
+    width: 100%;
+    height: auto;
+}
+
+.recommended p {
+    font-size: larger;
+    margin: 10px;
+}
